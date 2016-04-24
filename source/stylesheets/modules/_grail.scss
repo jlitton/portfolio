@@ -7,7 +7,7 @@
     clear: both;
   }
   #{ $items } {
-    $width: #{ 100% / $columns } - #{ ($columns - 1) / $columns * $gutter };
+    $width: unquote("#{ 100% / $columns } - #{ ($columns - 1) / $columns * $gutter }");
     display: block;
     box-sizing: border-box;
     width: 100% / $columns;
@@ -57,8 +57,9 @@
   $columns: nth($span, 1);
   $parent-columns: nth($span, 3);
   $relative-columns: $parent-columns / $columns;
-  $width: #{ 100% / $relative-columns } - #{ ($relative-columns - 1) / $relative-columns * $gutter };
+  $width: unquote("#{ 100% / $relative-columns } - #{ ($relative-columns - 1) / $relative-columns * $gutter }");
   width: 100% / $relative-columns;
   width: -webkit-calc(#{ $width });
   width: -moz-calc(#{ $width });
   width: calc(#{ $width });
+}

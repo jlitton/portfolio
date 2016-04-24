@@ -1,0 +1,186 @@
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin border-radius($tl: $rounded-radius, $tr: $tl, $br: $tl, $bl: $tl) {
+  -moz-border-radius: $tl $tr $br $bl;
+  -webkit-border-radius: $tl $tr $br $bl;
+  -khtml-border-radius: $tl $tr $br $bl;
+  border-radius: $tl $tr $br $bl;
+}
+
+@mixin box-shadow($definition: 1px 1px 5px rgba(0, 0, 0, .3)) {
+  -webkit-box-shadow: $definition;
+  -moz-box-shadow: $definition;
+  box-shadow: $definition;
+}
+
+@mixin box-shadow-none {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+@mixin input-clean {
+  background: inherit;
+  border: inherit;
+}
+
+@mixin input-style-1 {
+  background: white;
+  border: 1px solid $gray-6;
+}
+
+@mixin prevent-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin word-wrap {
+  word-break: break-all;
+}
+
+@mixin unselectable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+@mixin background-opacity($color, $opacity: 0.8) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
+
+@mixin transform($stuff) {
+  -webkit-transform: $stuff;
+  -moz-transform: $stuff;
+  -ms-transform: $stuff;
+  transform: $stuff;
+}
+
+
+@mixin antiscrollFade($isGray: false) {
+  position: relative;
+  &:before {
+    content: "";
+    @if $isGray {
+      background: image-url("scroll-gradient-top-gray.png");
+    }
+    @else {
+      background: image-url("scroll-gradient-top.png");
+    }
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &:after {
+    content: "";
+    @if $isGray {
+      background: image-url("scroll-gradient-gray.png");
+    }
+    @else {
+      background: image-url("scroll-gradient.png");
+    }
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .antiscroll-content {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+  }
+}
+
+@mixin placeholder($color) {
+  &::-webkit-input-placeholder { color:$color; }
+  &:-moz-placeholder { color:$color; }
+  &::-moz-placeholder {  color:$color; }
+  &:-ms-input-placeholder { color:$color; }
+}
+
+@mixin background-clip($whatever) {
+  -moz-background-clip: $whatever;
+  -webkit-background-clip: $whatever;
+  background-clip: #{$whatever}-box;
+}
+
+@mixin fadeTo($color, $stop) {
+  background: $color; /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba($color, 0) 0%, $color $stop, $color 100%);
+  background: -webkit-linear-gradient(left,  rgba($color, 0) 0%,  $color $stop, $color 100%);
+  background: -o-linear-gradient(left,  rgba($color, 0) 0%, $color $stop, $color 100%);
+  background: -ms-linear-gradient(left,  rgba($color, 0) 0%, $color $stop, $color 100%);
+  background: linear-gradient(to right,  rgba($color, 0) 0%, $color $stop, $color 100%);
+}
+
+@mixin user-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+}
+
+@mixin padding-below-header($padding-top: 14rem) {
+  padding-top: $padding-top;
+}
+
+@mixin truncate-text($width: 100%, $display: block) {
+  width: $width;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: $display;
+}
+
+// Material Cards
+@mixin md-card($bgColor: #ffffff, $padding: $space-small $space $space-small $space, $box-shadow: 0 1px 4px 0px rgba(0, 0, 0, .4)) {
+  transition: .15s all;
+  border-radius: 2px;
+  box-shadow: $box-shadow;
+  background-color: $bgColor;
+  &:hover {
+    box-shadow: 0 3px 6px 2px rgba(0, 0, 0, .3);
+  }
+  input[type="text"] {
+    border: 1px solid #ccc;
+  }
+}
+
+@mixin md-card-hover() {
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, .25);
+}
+
+@mixin add-link {
+  display: block;
+  margin-top: $space;
+  .add{
+    font-size: 1.6rem;
+    color: $success-color;
+    cursor: pointer;
+    span {
+      font-family: 'Open Sans', helvetica, sans-serif;
+    }
+    &:before {
+      padding-right: .8rem;
+    }
+  }
+}

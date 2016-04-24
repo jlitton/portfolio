@@ -31,6 +31,14 @@ page "/projects/*", :layout => "project_details"
 
 ###
 # Helpers
+helpers do
+  def svg(name)
+    root = Middleman::Application.root
+    file_path = "#{root}/source/images/#{name}.svg"
+    return File.read(file_path) if File.exists?(file_path)
+    '(not found)'
+  end
+end
 ###
 
 # Automatic image dimensions on image_tag helper
@@ -69,7 +77,7 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"

@@ -2,9 +2,45 @@
 title: Jesse Litton
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div class="section works">
+  <h1>Selected works</h1>
+  <div class="cards">
+
+    <% link_to 'projects/startclosing.html', :class => 'card' do %>
+      <img class="thumbnail" />
+      <div class="details">
+        <div class="work-title">
+          <h3>Start Closing</h3>
+        </div>
+        <div class="work-tag">
+          <h4>UI Re-design</h4>
+        </div>
+      </div>
+    <% end %>
+
+    <% link_to 'projects/ibm.html', :class => 'card' do %>
+      <img class="thumbnail" />
+      <div class="details">
+        <div class="work-title">
+          <h3>IBM Alchemy API</h3>
+        </div>
+        <div class="work-tag">
+          <h4>UX</h4>
+        </div>
+      </div>
+    <% end %>
+
+    <% link_to 'projects/epson.html', :class => 'card' do %>
+      <img class="thumbnail" />
+      <div class="details">
+        <div class="work-title">
+          <h3>Epson Parascript</h3>
+        </div>
+        <div class="work-tag">
+          <h4>UI &amp; UX</h4>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+</div>
