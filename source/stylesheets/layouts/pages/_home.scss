@@ -4,16 +4,18 @@
   border-bottom-right-radius: 2px;
   overflow: hidden;
 
+  h1 {
+    font-family: $font-family;
+    font-size: $section-title-size;
+    font-weight: 300;
+    text-align: center;
+    color: $title-color;
+  }
+
   &.works {
     padding-top: 35px;
     padding-bottom: 100px;
-    h1 {
-      font-family: $font-family;
-      font-size: $section-title-size;
-      font-weight: 300;
-      text-align: center;
-      color: $title-color;
-    }
+
     .cards {
       @include columns(3, 20px);
       width: 940px;
@@ -25,6 +27,7 @@
         width: calc(100% - 20px);
       }
       .card {
+        @include transition(0.15s all ease-in-out);
         background-color: $white;
         border-radius: 3px;
         border: 1px solid $border-color;
