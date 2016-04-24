@@ -23,6 +23,7 @@
 # with_layout :admin do
 #   page "/admin/*"
 # end
+page "/projects/*", :layout => "project_details"
 
 # Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
@@ -36,6 +37,8 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
+
+
 configure :development do
   activate :livereload
 end
@@ -56,7 +59,7 @@ set :images_dir, 'images'
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
   activate :minify_javascript
