@@ -1,0 +1,10 @@
+.footer {
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  p {
+    font-family: $font-family;
+    font-size: $section-text-size;
+    color: $text-color;
+  }
+}
