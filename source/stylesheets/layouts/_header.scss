@@ -5,13 +5,13 @@
   overflow: hidden;
 
   .content {
-    padding-top: 214px;
-    padding-bottom: 214px;
+    padding-top: 134px;
+    padding-bottom: 154px;
     text-align: center;
 
     @media (max-width: 940px) {
-      padding-top: 170px;
-      padding-bottom: 170px;
+      padding-top: 120px;
+      padding-bottom: 140px;
     }
     .title {
       font-family: $font-family;

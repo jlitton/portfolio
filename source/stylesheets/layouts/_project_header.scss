@@ -27,12 +27,14 @@
     }
   }
 
-  .header {
-    .content {
-      @media (max-width: 940px) {
-        padding-top: 170px;
-        padding-bottom: 170px;
-      }
+
+  .content {
+    padding-top: 128px;
+    padding-bottom: 214px;
+
+    @media (max-width: 940px) {
+      padding-top: 96px;
+      padding-bottom: 170px;
     }
   }
 }

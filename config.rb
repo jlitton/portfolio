@@ -82,3 +82,11 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+activate :deploy do | deploy |
+  deploy.method = :rsync
+  deploy.host            = '198.199.73.144'
+  deploy.path            = '/var/www/'
+  deploy.user            = 'jlitton'
+  deploy.port            = 25000
+end
