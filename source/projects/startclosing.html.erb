@@ -7,7 +7,7 @@ category: UI Re-design
   <%= image_tag 'startclosing_header.png', :width => '735' %>
 </div>
 <div class="section">
-  <div class="sub-section">
+  <div class="sub-section text">
     <h1 class="title">Background &amp; goal</h1>
       <p class="text">
         <%= link_to 'Start Closing', 'http://www.startclosing.com/', :target => '_blank' %> is a platform <%= link_to '(YC16)', 'http://techcrunch.com/2016/03/23/y-combinator-winter-2016/', :target => '_blank' %> that helps contractors close more projects by allowing them to move leads through the application by utilizing stages on any given project. There are four stages that a project can have: prospect, under contract, in production, and billing. These stages require different information to be associated with a project. For instance a project with a stage of under contract, needs a signed contract associated with it in order for the project to move into the stage "In Production."
@@ -29,6 +29,94 @@ category: UI Re-design
         <div class="details">
           <p class="content">New UI</p>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub-section">
+    <h1 class="title">The problems</h1>
+    <p class="text">I started taking a look at the issues that stood out to me. At a higher level these included:</p>
+    <div class="featured-details">
+      <div class="feature-detail">
+        <span class="detail">Spacing</span>
+      </div>
+      <div class="feature-detail">
+        <span class="detail">Action colors (2)</span>
+      </div>
+      <div class="feature-detail">
+        <span class="detail">Wasted space (top)</span>
+      </div>
+      <div class="feature-detail">
+        <span class="detail">Navbar hierarchy</span>
+      </div>
+      <div class="feature-detail">
+        <span class="detail">Main actions</span>
+      </div>
+      <div class="feature-detail">
+        <span class="detail">Odd visual accents</span>
+      </div>
+    </div>
+  </div>
+  <div class="sub-section">
+    <hr />
+  </div>
+  <div class="sub-section text">
+    <h1 class="title">Process</h1>
+    <p class="text">
+      There was an MVP that allowed us to figure out what assumptions we initially made were correct, incorrect and irrelevant. The MVP lacked a consistent, well defined interface that would help create a consistent experience across the board.
+    </p>
+    <p class="text">
+      We started with some phone conversations with users to hear how they typically use the application and where they get confused (and what they don't like about it). We gained some valuable insight into our naming conventions and current user experience that wasn't apparent previously.
+    </p>
+    <p class="text">
+      We then took a look at the interface and noticed some problems with the visual hierarchy as well as some aesthetic issues – some of which are included under the “problems” section above.
+    </p>
+    <p class="text">
+      Since the product team was a team of two others, we worked really closely with each other in order to ensure we were all on the same page and making the right calls together. We tried to keep to an agile process as much as possible; however, there were times when we lacked process and substituted conversations when necessary as process sometimes became a barrier that blocked us.
+    </p>
+  </div>
+  <div class="sub-section">
+    <h1 class="title">Ideas &amp; workflows</h1>
+    <div class="works full">
+      <div class="work">
+        <%= image_tag 'startclosing_project_workflow.png', :width => '940' %>
+        <p class="text">Portion of the project flow.</p>
+      </div>
+      <div class="work">
+        <%= image_tag 'startclosing_signup_workflow.png', :width => '940' %>
+        <p class="text">Portions of the signup and accept invite flows.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sub-section">
+    <h1 class="title">Designs</h1>
+    <div class="works half">
+      <div class="work">
+        <%= image_tag 'startclosing_project_overview.png', :width => '460' %>
+        <p class="text">Project view: contractors add, update and view information on a given project.</p>
+      </div>
+      <div class="work">
+        <%= image_tag 'startclosing_project_messages.png', :width => '460' %>
+        <p class="text">Messages view: contractors, home owners and insurance adjusters can chat here.</p>
+      </div>
+    </div>
+    <div class="works full">
+      <div class="work">
+        <%= image_tag 'startclosing_personal_settings.png', :width => '940' %>
+        <p class="text">Personal info settings: contractors can update their account settings here.</p>
+      </div>
+    </div>
+  </div>
+  <div class="get-in-touch">
+    <div class="content">
+      <div class="left">
+        <h1 class="title">Want to know more?</h1>
+        <p class="text">If you’re curious to hear more about this project or any other work, please get in touch with me below.</p>
+        <div class="btn-container">
+          <%= mail_to 'jesse.litton+portfolio@gmail.com', 'Get in touch', :class => 'primary btn' %>
+        </div>
+      </div>
+      <div class="right">
+        <%= image_tag 'jesse_mug.png', :width => '468' %>
       </div>
     </div>
   </div>

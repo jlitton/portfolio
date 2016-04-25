@@ -5,3 +5,25 @@ body {
   margin-bottom: 10px;
   width: calc(100% - 20px);
 }
+
+hr {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  height: 1px;
+  border: 1px solid transparent;
+  border-top: 1px solid $border-color;
+}
+
+.btn {
+  border-radius: 3px;
+  padding: 10px 40px;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: $btn-text-size;
+  text-transform: uppercase;
+
+  &.primary {
+    background-color: $primary-color;
+    color: $white;
+  }
+}
