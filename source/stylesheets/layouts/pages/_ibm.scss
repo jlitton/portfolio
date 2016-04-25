@@ -1,0 +1,52 @@
+.projects_ibm {
+  .section {
+    .sub-section.challenges {
+      .text {
+        width: 640px;
+        margin: auto;
+        margin-bottom: 30px;
+
+        @media (max-width: 940px) {
+          width: calc(100% - 20px);
+          margin: auto;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    @media (min-width: 320px) {
+      padding-top: 242px;
+    }
+
+    @media (min-width: 386px) {
+      padding-top: 278px;
+    }
+
+    @media (min-width: 453px) {
+      padding-top: 345px;
+    }
+
+    @media (min-width: 531px) {
+      padding-top: 423px;
+    }
+
+    @media (min-width: 622px) {
+      padding-top: 514px;
+    }
+
+    @media (min-width: 720px) {
+      padding-top: 573px;
+    }
+
+    @media (min-width: 797px) {
+      padding-top: 636px;
+    }
+
+    @media (min-width: 869px) {
+      padding-top: 697px;
+    }
+
+    @media (min-width: 940px) {
+      padding-top: 480px;
+    }
+  }
+}

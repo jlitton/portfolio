@@ -19,7 +19,11 @@
       font-weight: 400;
       margin-bottom: 16px;
       color: $white;
-      line-height: initial
+      line-height: initial;
+
+      @media (max-width: 940px) {
+        font-size: $section-title-size;
+      }
     }
     .subtitle {
       font-family: $font-family;

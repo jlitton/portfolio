@@ -1,0 +1,60 @@
+.projects_epson {
+  .section {
+    .sub-section.challenges {
+      .text {
+        width: 640px;
+        margin: auto;
+        margin-bottom: 30px;
+
+        @media (max-width: 940px) {
+          width: calc(100% - 20px);
+          margin: auto;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    @media (min-width: 320px) {
+      padding-top: 281px;
+    }
+
+    @media (min-width: 386px) {
+      padding-top: 281px;
+    }
+
+    @media (min-width: 414px) {
+      padding-top: 315px;
+    }
+
+    @media (min-width: 454px) {
+      padding-top: 350px;
+    }
+
+    @media (min-width: 503px) {
+      padding-top: 395px;
+    }
+
+    @media (min-width: 531px) {
+      padding-top: 423px;
+    }
+
+    @media (min-width: 622px) {
+      padding-top: 514px;
+    }
+
+    @media (min-width: 730px) {
+      padding-top: 617px;
+    }
+
+    @media (min-width: 797px) {
+      padding-top: 687px;
+    }
+
+    @media (min-width: 869px) {
+      padding-top: 747px;
+    }
+
+    @media (min-width: 940px) {
+      padding-top: 543px;
+    }
+  }
+}

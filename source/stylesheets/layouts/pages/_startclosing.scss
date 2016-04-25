@@ -1,4 +1,11 @@
 .projects_startclosing {
+  .hero {
+    @media (max-width: 940px) {
+      img {
+        margin-left: 22px;
+      }
+    }
+  }
   .section {
     @media (min-width: 400px) {
       padding-top: 142px;

@@ -3,9 +3,103 @@ title: IBM Alchemy API
 category: UX
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div class="hero">
+  <%= image_tag 'ibm_header.png', :width => '703' %>
+</div>
+<div class="section">
+  <div class="sub-section text">
+    <h1 class="title">Background &amp; goal</h1>
+    <p class="text">
+      <%= link_to 'Alchemy API', 'http://www.alchemyapi.com/', :target => '_blank' %> is an intelligent API that can take search queries and find articles that match a given query along with attributes such as positive and negative sentiment. I was brought on to help them understand some ways they could increase visibility into how they price their API usage and funnel more sales through their website without having to call a sales rep.
+    </p>
+  </div>
+  <div class="sub-section challenges">
+    <h1 class="title">The challenges</h1>
+    <p class="text">
+      The main issue at hand was that you had to “Call Sales” in order to figure out what the pricing structure was. Also, they were looking at relaunching their site under a newer brand and needed this pricing page to fit into a potential direction they were exploring. The one constraint was that I could not touch the current navbar which was dated.
+    </p>
+    <div class="featured-details three">
+      <div class="feature-detail">
+        <span class="detail">Dated navbar</span>
+      </div>
+      <div class="feature-detail">
+        <span class="detail">New and old colors</span>
+      </div>
+      <div class="feature-detail">
+        <span class="detail">No self-checkout</span>
+      </div>
+    </div>
+    <div class="featured-details two">
+      <div class="feature-detail">
+        <span class="detail">New brand coming</span>
+      </div>
+      <div class="feature-detail">
+        <span class="detail">Make API pretty</span>
+      </div>
+    </div>
+  </div>
+  <div class="sub-section">
+    <hr />
+  </div>
+  <div class="sub-section text">
+    <h1 class="title">Process</h1>
+    <p class="text">
+      When we sat down to discuss what <%= link_to 'Alchemy API', 'http://www.alchemyapi.com/' %> wanted to accomplish together, their pricing page was brought up. They wanted people to hit their pricing page and understand what plans there were for the API and how much they would cost.
+    </p>
+    <p class="text">
+      With this in mind, I started to research other pricing pages. Some pages that stood out to me as having a strong technical complexity, but simple pricing breakdowns were: <%= link_to 'Digital Ocean', 'http://www.digitalocean.com/pricing', :target => '_blank' %>, <%= link_to 'Heroku', 'http://www.heroku.com/pricing', :target => '_blank' %>, <%= link_to 'Mapbox', 'http://www.mapbox.com/pricing', :target => '_blank' %>, along with a few others.
+    </p>
+    <p class="text">
+      I then sketched some ideas down about how I thought certain elements of the researched pages could be incorporated into an Alchemy API pricing page. I was then starting to think about how we could automate the checkout process and have customizable plans with a similar pattern to how Apple allows you to customize a laptop on checkout.
+    </p>
+    <p class="text">
+      We tended to have weekly checkins with design and the team over at <%= link_to 'Alchemy API', 'http://www.alchemyapi.com/' %> to discuss the direction and if we needed to pivot.
+    </p>
+  </div>
+  <div class="sub-section">
+    <h1 class="title">Ideas &amp; workflows</h1>
+    <div class="works full">
+      <div class="work">
+        <%= image_tag 'ibm_plans_sketch.png', :width => '940' %>
+        <p class="text">Different portions of the plans page and final layout decision.</p>
+      </div>
+      <div class="work">
+        <%= image_tag 'ibm_checkout_sketch.png', :width => '940' %>
+        <p class="text">The checkout flow when you customize and select a plan.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sub-section">
+    <h1 class="title">Wireframes</h1>
+    <div class="works half">
+      <div class="work">
+        <%= image_tag 'ibm_pricing.png', :width => '460' %>
+        <p class="text">Alchemy data pricing: users can select a plan here.</p>
+      </div>
+      <div class="work">
+        <%= image_tag 'ibm_checkout.png', :width => '460' %>
+        <p class="text">Customize plan: users can customize the plan to their liking.</p>
+      </div>
+    </div>
+    <div class="works full">
+      <div class="work">
+        <%= image_tag 'ibm_billing.png', :width => '940' %>
+        <p class="text">Checkout with a plan: users can enter their billing information here in order to purchase and Alchemy API plan.</p>
+      </div>
+    </div>
+  </div>
+  <div class="get-in-touch">
+    <div class="content">
+      <div class="left">
+        <h1 class="title">Want to know more?</h1>
+        <p class="text">If you’re curious to hear more about this project or any other work, please get in touch with me below.</p>
+        <div class="btn-container">
+          <%= mail_to 'jesse.litton+portfolio@gmail.com', 'Get in touch', :class => 'primary btn' %>
+        </div>
+      </div>
+      <div class="right">
+        <%= image_tag 'jesse_mug.png', :width => '468' %>
+      </div>
+    </div>
+  </div>
+</div>

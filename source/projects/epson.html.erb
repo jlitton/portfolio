@@ -3,9 +3,79 @@ title: Epson Parascript
 category: UX &amp; UI
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div class="hero">
+  <%= image_tag 'epson_header.png', :width => '703' %>
+</div>
+<div class="section">
+  <div class="sub-section text">
+    <h1 class="title">Background &amp; goal</h1>
+    <p class="text">
+      <%= link_to 'Epson', 'http://www.epson.com/', :target => '_blank' %> has a scanner line that will digitize the contents of what has been scanned via Optical Character Recognition (OCR) software. They already have native applications that handle the scanning, but they wanted to take it all online with a web application. The primary use for the app would be to collect scanned images such as receipts, bills etc. and categorize them for later reference along with not having to do much data entry.
+    </p>
+  </div>
+  <div class="sub-section challenges">
+    <h1 class="title">The challenges</h1>
+    <p class="text">
+      There were several challenges throughout the process working on the application. Some of which included:
+    </p>
+    <div class="featured-details three">
+      <div class="feature-detail">
+        <span class="detail">No existing brand</span>
+      </div>
+      <div class="feature-detail">
+        <span class="detail">Cater to all ages</span>
+      </div>
+      <div class="feature-detail">
+        <span class="detail">Offline mode</span>
+      </div>
+    </div>
+  </div>
+  <div class="sub-section">
+    <hr />
+  </div>
+  <div class="sub-section text">
+    <h1 class="title">Process</h1>
+    <p class="text">
+      I got to help create a visual inventory for the client depicting other dashboards and web apps that had some of the features that they wanted.
+    </p>
+    <p class="text">
+      Once we talked about the visual inventory and saw what the client liked and didn't like, we started pulling some color palettes together and wireframing some of the main views to see if the hierarchy of information and layout was sufficient for the clients needs.
+    </p>
+    <p class="text">
+      After that, we started creating the higher fidelity mock ups and created a visual style guide for our developers to go off of. In some cases for specific interactions I would make some Code Pens with CSS and JavaScript transitions and animations so that our developers didn't have to worry about those details.
+    </p>
+  </div>
+  <div class="sub-section">
+    <h1 class="title">Designs</h1>
+    <div class="works half">
+      <div class="work">
+        <%= image_tag 'epson_grid.png', :width => '460' %>
+        <p class="text">Receipts grid view</p>
+      </div>
+      <div class="work">
+        <%= image_tag 'epson_table.png', :width => '460' %>
+        <p class="text">Receipts table view</p>
+      </div>
+    </div>
+    <div class="works full">
+      <div class="work">
+        <%= image_tag 'epson_settings.png', :width => '940' %>
+        <p class="text">Receipt settings – categories</p>
+      </div>
+    </div>
+  </div>
+  <div class="get-in-touch">
+    <div class="content">
+      <div class="left">
+        <h1 class="title">Want to know more?</h1>
+        <p class="text">If you’re curious to hear more about this project or any other work, please get in touch with me below.</p>
+        <div class="btn-container">
+          <%= mail_to 'jesse.litton+portfolio@gmail.com', 'Get in touch', :class => 'primary btn' %>
+        </div>
+      </div>
+      <div class="right">
+        <%= image_tag 'jesse_mug.png', :width => '468' %>
+      </div>
+    </div>
+  </div>
+</div>

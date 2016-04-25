@@ -14,7 +14,6 @@
         width: calc(100% - 20px);
         height: auto;
         margin-top: -88px;
-        margin-left: 24px;
       }
     }
   }
@@ -98,13 +97,29 @@
     }
   }
   .featured-details {
-    @include columns(3, 20px);
     width: 800px;
     margin: auto;
+    &.three {
+      @include columns(3, 20px);
+    }
+    &.two {
+      @include columns(2, 20px);
+      width: 540px;
+      margin-top: 20px;
+    }
 
     @media (max-width: 940px) {
       @include columns(1,20px);
       width: calc(100% - 20px);
+
+      &.three {
+        @include columns(1,20px);
+        width: calc(100% - 20px);
+      }
+      &.two {
+        @include columns(1,20px);
+        width: calc(100% - 20px);
+      }
     }
     .feature-detail {
       padding: 13px 50px;
