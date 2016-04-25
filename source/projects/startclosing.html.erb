@@ -3,9 +3,33 @@ title: Start Closing
 category: UI Re-design
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div class="hero">
+  <%= image_tag 'startclosing_header.png', :width => '735' %>
+</div>
+<div class="section">
+  <div class="sub-section">
+    <h1 class="title">Background &amp; goal</h1>
+      <p class="text">
+        <%= link_to 'Start Closing', 'http://www.startclosing.com/', :target => '_blank' %> is a platform <%= link_to '(YC16)', 'http://techcrunch.com/2016/03/23/y-combinator-winter-2016/', :target => '_blank' %> that helps contractors close more projects by allowing them to move leads through the application by utilizing stages on any given project. There are four stages that a project can have: prospect, under contract, in production, and billing. These stages require different information to be associated with a project. For instance a project with a stage of under contract, needs a signed contract associated with it in order for the project to move into the stage "In Production."
+      </p>
+      <p class="text">
+        The goal for the platform is that it will aid contractors in closing more leads and in turn will help them connect with more customers while returning a higher profit.
+      </p>
+  </div>
+  <div class="sub-section">
+    <div class="comparison">
+      <div class="fig-one">
+        <%= image_tag 'startclosing_old.png', :width => '486' %>
+        <div class="details">
+          <p class="content">Old UI</p>
+        </div>
+      </div>
+      <div class="fig-two">
+        <%= image_tag 'startclosing_new.png', :width => '453' %>
+        <div class="details">
+          <p class="content">New UI</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

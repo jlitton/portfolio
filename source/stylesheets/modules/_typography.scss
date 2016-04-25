@@ -4,3 +4,25 @@ $h-subtitle-size: 18px;
 $section-title-size: 28px;
 $section-text-size: 14px;
 $btn-text-size: 11px;
+
+// global styles
+.title {
+  font-family: $font-family;
+  font-size: $section-title-size;
+  font-weight: 500;
+  color: $title-color;
+  line-height: 1.5;
+}
+
+.text {
+  font-family: $font-family;
+  font-size: $section-text-size;
+  font-weight: 300;
+  color: $text-color;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}

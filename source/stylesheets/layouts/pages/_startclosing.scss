@@ -1,0 +1,31 @@
+.projects_startclosing {
+  .section {
+    @media (min-width: 400px) {
+      padding-top: 142px;
+    }
+
+    @media (min-width: 515px) {
+      padding-top: 190px;
+    }
+
+    @media (min-width: 619px) {
+      padding-top: 250px;
+    }
+
+    @media (min-width: 743px) {
+      padding-top: 310px;
+    }
+
+    @media (min-width: 788px) {
+      padding-top: 335px;
+    }
+
+    @media (min-width: 926px) {
+      padding-top: 392px;
+    }
+
+    @media (min-width: 940px) {
+      padding-top: 206px;
+    }
+  }
+}

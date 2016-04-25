@@ -1,3 +1,43 @@
+// Project header specific styles
+
+.projects .header {
+  .action-area {
+    margin-top: 30px;
+    margin-left: 30px;
+
+    .btn {
+      font-family: $font-family;
+      font-size: $btn-text-size;
+      font-weight: 500;
+      color: $title-color;
+      padding: 10px 40px 10px 40px;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &.back {
+        background-color: $white;
+        border-radius: 150px;
+
+        img {
+          vertical-align: middle;
+          margin-top: -2px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+
+  .header {
+    .content {
+      @media (max-width: 940px) {
+        padding-top: 170px;
+        padding-bottom: 170px;
+      }
+    }
+  }
+}
+
+// Project header colors
 .projects_startclosing {
   .header {
     background-color: $startclosing;

@@ -9,12 +9,17 @@
     padding-bottom: 214px;
     text-align: center;
 
+    @media (max-width: 940px) {
+      padding-top: 170px;
+      padding-bottom: 170px;
+    }
     .title {
       font-family: $font-family;
       font-size: $h-title-size;
       font-weight: 400;
       margin-bottom: 16px;
       color: $white;
+      line-height: initial
     }
     .subtitle {
       font-family: $font-family;
