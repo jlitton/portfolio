@@ -16,7 +16,7 @@
     padding-top: 35px;
 
     .cards {
-      @include columns(3, 20px);
+      @include columns(4, 20px);
       width: 940px;
       padding-top: 35px;
       margin: auto;
